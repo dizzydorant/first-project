@@ -1,0 +1,88 @@
+body {
+  font-family: Helvetica, sans-serif;
+  color: #5c5c5e;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.button {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 21px 111px 21px 111px;
+  color: white;
+  background: linear-gradient(#bc10d8, #5000faed);
+  border-image: linear-gradient(#bc10d8, #5000faed) 1;
+}
+
+.price {
+  padding: 21px 106px;
+  border: 1px solid;
+  border-image: linear-gradient(#bc10d8, #5000faed) 1;
+}
+
+.header {
+  border-bottom: 1px solid #cacad6;
+  background-color: #f6f4f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__basket {
+  cursor: pointer;
+}
+
+.welcome {
+  background-image: url("../images/Rectangle\ 2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* height: 1000px; */
+}
+
+.welcome__wrapper {
+  padding: 230px 0px 454px 0px;
+}
+
+.welcome__buttons-wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+
+.welcome__title {
+  font-size: 96px;
+  font-weight: 400;
+}
+
+.welcome__subtitle {
+  font-size: 36px;
+  margin-top: 15px;
+}
+
+.welcome__text {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.welcome__rules {
+  font-size: 13px;
+  margin-top: 10px;
+}
