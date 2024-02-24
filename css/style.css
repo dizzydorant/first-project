@@ -535,7 +535,7 @@ body {
   flex-basis: 600px;
 }
 
-.form {
+.contacts__inputs {
   margin-bottom: 10px;
   position: relative;
 }
