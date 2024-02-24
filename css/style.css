@@ -53,7 +53,7 @@ body {
 
 .welcome {
   background-image: url("../images/Rectangle\ 2.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   /* height: 1000px; */
 }
@@ -232,7 +232,8 @@ body {
 .games__item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 40px;
   padding: 20px;
   border-right: 1px solid;
   border-image: linear-gradient(#bc10d8, #5000faed) 1;
@@ -242,27 +243,342 @@ body {
   border: none;
 }
 
-.games__item-image {
-  width: 260px;
-  height: 260px;
-}
-
 .games__item-heading {
   max-width: 265px;
   font-size: 24px;
   color: #070707;
 }
 
-.games__item-heading__item-text {
+.games__item-text {
   max-width: 259px;
 }
 
-.games__item-heading__item-button {
+.games__item-button {
   cursor: pointer;
   max-width: 259px;
   border: none;
   background-image: linear-gradient(#bc10d8, #5000faed);
   color: transparent;
   -webkit-background-clip: text;
-  margin-top: 40px;
+  align-self: flex-start;
+}
+
+.buy__wrapper {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.buy__background {
+  position: absolute;
+
+  font-weight: 700;
+  font-size: 400px;
+  color: #bc10d8;
+  opacity: 0.1;
+
+  animation: oculus-bg-text 10s linear infinite forwards;
+}
+
+.buy__image {
+  max-width: 350px;
+  max-height: 340px;
+}
+
+.buy__buttons-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes oculus-bg-text {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.in-the-box {
+  margin-top: 109px;
+}
+
+.in-the-box__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-the-box__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.inner {
+  display: flex;
+  gap: 19px;
+}
+
+.in-the-box__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.in-the-box__left-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 40px;
+}
+
+.in-the-box__subtitle {
+  margin-bottom: 25px;
+}
+
+.in-the-box__right-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.in-the-box__text {
+  margin-bottom: 198px;
+  max-width: 280px;
+  font-size: 36px;
+  background-image: linear-gradient(#bc10d8, #5000faed);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+}
+
+.in-the-box2 {
+  margin-top: 100px;
+}
+
+.in-the-box__wrapper2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-the-box__title2 {
+  margin-bottom: 50px;
+}
+
+.inner2 {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  gap: 10px;
+}
+
+.in-the-box__text2 {
+  margin-bottom: 198px;
+  max-width: 280px;
+  font-size: 36px;
+  background-image: linear-gradient(#bc10d8, #5000faed);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+}
+
+.in-the-box__left-box2 {
+  display: grid;
+  gap: 10px;
+}
+
+.in-the-box__right-box2 {
+  display: grid;
+}
+.in-the-box__subtitle2 {
+  margin-bottom: 20px;
+}
+
+.metaverse-loading {
+  margin-top: 100px;
+}
+
+.metaverse-loading__wrapper {
+  position: relative;
+}
+
+.metaverse-loading__text {
+  position: absolute;
+  top: 63px;
+  left: 546px;
+  max-width: 109px;
+  color: #f6f4f5;
+  text-shadow: #bc10d8 0px 4px 4px;
+}
+
+.metaverse-loading__button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 79px;
+  left: 50%;
+  border: 1px;
+  background-image: linear-gradient(#bc10d8, #5000faed);
+  color: white;
+}
+
+.accessories {
+  margin-top: 100px;
+}
+
+.accessories__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.accessories__title {
+  margin-bottom: 30px;
+}
+
+.accessories__subtitle {
+  margin-bottom: 30px;
+  font-size: 36px;
+  max-width: 626px;
+  text-transform: uppercase;
+  background-image: linear-gradient(#bc10d8, #5000faed);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.accessories__list {
+  list-style: none;
+  display: flex;
+  border: 1px solid;
+  border-image: linear-gradient(#bc10d8, #5000faed) 1;
+}
+
+.accessories__item {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid;
+  border-image: linear-gradient(#bc10d8, #5000faed) 1;
+  gap: 10px;
+  padding: 20px;
+}
+
+.accessories__item:nth-child(1) {
+  border: none;
+}
+
+.accessories__upper-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 42px;
+}
+
+.accessories__image {
+  max-width: 260px;
+  max-height: 280px;
+}
+
+.accessories__text {
+  max-width: 260px;
+  font-size: 24px;
+  color: #070707;
+  height: 56px;
+}
+
+.accessories__subtext {
+  max-width: 260px;
+  height: 36px;
+}
+
+.accessories__lower-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accessories__price {
+  font-weight: 700;
+  color: #070707;
+}
+
+.accessories__button {
+  width: 260px;
+  cursor: pointer;
+  border: 1px solid;
+  border-image: linear-gradient(#bc10d8, #5000faed) 1;
+  background-image: linear-gradient(#bc10d8, #5000faed);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.contacts {
+  margin-top: 100px;
+}
+
+.contacts__title {
+  font-size: 24px;
+  margin-top: 9px;
+  color: #070707;
+  margin-bottom: 10px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.contacts__form {
+  flex-basis: 600px;
+}
+
+.form {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.contacts__email {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.contacts__button {
+  cursor: pointer;
+  border: none;
+  color: none;
+  width: 50px;
+  height: 50px;
+  background-color: #cacad6;
+  border-radius: 50%;
+  font-weight: 700;
+  position: absolute;
+  right: 0px;
+  top: -35px;
+}
+
+.contacts__text {
+  font-size: 13px;
+}
+
+.footer {
+  margin-top: 100px;
+  border-bottom: 1px solid #cacad6;
+  border-top: 1px solid #cacad6;
+  margin-bottom: 44px;
+  padding: 30px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__menu-list {
+  display: flex;
+  gap: 20px;
 }
