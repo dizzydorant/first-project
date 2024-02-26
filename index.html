@@ -6,10 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/adaptive.css" />
   </head>
 
   <main>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <nav class="header__menu">
@@ -33,7 +34,7 @@
           <img class="header__basket" src="/images/bag.png" />
         </div>
       </div>
-    </header>
+    </header> -->
 
     <body class="body">
       <section class="welcome">
@@ -70,17 +71,22 @@
 
             <div class="product-features__tabs">
               <ul class="product-features__list">
-                <li class="product-features__item"><b>01 Graphics</b></li>
+                <div class="product-features__box1">
+                  <li class="product-features__item"><b>01 Graphics</b></li>
 
-                <li class="product-features__item">02 Controls</li>
+                  <li class="product-features__item">02 Controls</li>
 
-                <li class="product-features__item">03 Processor</li>
+                  <li class="product-features__item">03 Processor</li>
+                </div>
+                <div class="product-features__box2">
+                  <li class="product-features__item">
+                    04 Set up your play area
+                  </li>
 
-                <li class="product-features__item">04 Set up your play area</li>
+                  <li class="product-features__item">05 Gardian activity</li>
 
-                <li class="product-features__item">05 Gardian activity</li>
-
-                <li class="product-features__item">06 Headset casting</li>
+                  <li class="product-features__item">06 Headset casting</li>
+                </div>
               </ul>
 
               <img
@@ -126,72 +132,78 @@
             <h2 class="games__heading">GAMES</h2>
 
             <div class="games__box">
-              <div class="games__intro">
-                <p class="games__intro-heading">It’s all fun and games</p>
-
-                <p class="games__intro-text">
-                  Discover new adventures, master epic challenges or revisit
-                  classic moments in your favourite games and experiences
-                </p>
-
-                <button class="games__intro-button">SEE ALL GAMES</button>
-              </div>
-
               <ul class="games__list">
-                <li class="games__item">
-                  <div>
-                    <img
-                      class="games__item-image"
-                      src="images/Rectangle 7.png"
-                    />
+                <div class="games__items-inner">
+                  <li class="games__item games__text-item">
+                    <p class="games__intro-heading">It’s all fun and games</p>
 
-                    <h3 class="games__item-heading">Blade & Sorcery: Nomad</h3>
-
-                    <p class="games__item-text">
-                      Step into a medieval fantasy sandbox that uses phisics to
-                      serve up some of the most realistic combat in VR
+                    <p class="games__intro-text">
+                      Discover new adventures, master epic challenges or revisit
+                      classic moments in your favourite games and experiences
                     </p>
-                  </div>
 
-                  <button class="games__item-button">see more</button>
-                </li>
+                    <button class="games__intro-button">SEE ALL GAMES</button>
+                  </li>
+                </div>
 
-                <li class="games__item">
-                  <div>
-                    <img
-                      class="games__item-image"
-                      src="/images/Rectangle 7 (1).png"
-                    />
+                <div class="games__items-inner">
+                  <li class="games__item">
+                    <div>
+                      <img
+                        class="games__item-image"
+                        src="images/Rectangle 7.png"
+                      />
 
-                    <h3 class="games__item-heading">Population: One</h3>
+                      <h3 class="games__item-heading">
+                        Blade & Sorcery: Nomad
+                      </h3>
 
-                    <p class="games__item-text">
-                      Climb anything. Fight everywhere. Experience battle royale
-                      only possible in VR
-                    </p>
-                  </div>
+                      <p class="games__item-text">
+                        Step into a medieval fantasy sandbox that uses phisics
+                        to serve up some of the most realistic combat in VR
+                      </p>
+                    </div>
 
-                  <button class="games__item-button">see more</button>
-                </li>
+                    <button class="games__item-button">see more</button>
+                  </li>
 
-                <li class="games__item">
-                  <div>
-                    <img
-                      class="games__item-image"
-                      src="/images/Rectangle 7 (2).png"
-                    />
+                  <li class="games__item">
+                    <div>
+                      <img
+                        class="games__item-image"
+                        src="/images/Rectangle 7 (1).png"
+                      />
 
-                    <h3 class="games__item-heading">Supernatural</h3>
+                      <h3 class="games__item-heading">Population: One</h3>
 
-                    <p class="games__item-text">
-                      Box, Flow, Meditate and Stretch with real coaches in
-                      stunning destinations from around the world. Enjoy new
-                      workouts every day.
-                    </p>
-                  </div>
+                      <p class="games__item-text">
+                        Climb anything. Fight everywhere. Experience battle
+                        royale only possible in VR
+                      </p>
+                    </div>
 
-                  <button class="games__item-button">see more</button>
-                </li>
+                    <button class="games__item-button">see more</button>
+                  </li>
+
+                  <li class="games__item">
+                    <div>
+                      <img
+                        class="games__item-image"
+                        src="/images/Rectangle 7 (2).png"
+                      />
+
+                      <h3 class="games__item-heading">Supernatural</h3>
+
+                      <p class="games__item-text">
+                        Box, Flow, Meditate and Stretch with real coaches in
+                        stunning destinations from around the world. Enjoy new
+                        workouts every day.
+                      </p>
+                    </div>
+
+                    <button class="games__item-button">see more</button>
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
@@ -219,38 +231,52 @@
 
             <div class="inner">
               <div class="in-the-box__box">
-                <img class="in-the-box__image" src="/images/Rectangle 8.png" />
+                <img
+                  class="in-the-box__big-image"
+                  src="/images/Rectangle 8.png"
+                />
 
                 <p class="in-the-box__subtitle">VR Headset</p>
               </div>
 
-              <div class="in-the-box__left-box">
-                <img class="in-the-box__image" src="/images/Rectangle 9.png" />
+              <div class="in-the-box__general-box">
+                <div class="in-the-box__left-box">
+                  <img
+                    class="in-the-box__image"
+                    src="/images/Rectangle 9.png"
+                  />
 
-                <p class="in-the-box__subtitle">
-                  Two Touch Controllers & AA Batteries
-                </p>
+                  <p class="in-the-box__subtitle">
+                    Two Touch Controllers & AA Batteries
+                  </p>
 
-                <img class="in-the-box__image" src="/images/Rectangle 10.png" />
+                  <img
+                    class="in-the-box__image"
+                    src="/images/Rectangle 10.png"
+                  />
 
-                <p class="in-the-box__subtitle">
-                  Charging Cable & Power Adapter
-                </p>
-              </div>
+                  <p class="in-the-box__subtitle">
+                    Charging Cable & Power Adapter
+                  </p>
+                </div>
 
-              <div class="in-the-box__right-box">
-                <p class="in-the-box__text">What's included</p>
+                <div class="in-the-box__right-box">
+                  <p class="in-the-box__text">What's included</p>
 
-                <img class="in-the-box__image" src="/images/Rectangle 11.png" />
+                  <img
+                    class="in-the-box__image"
+                    src="/images/Rectangle 11.png"
+                  />
 
-                <p class="in-the-box__subtitle">Glasses Spacer</p>
+                  <p class="in-the-box__subtitle">Glasses Spacer</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="in-the-box2">
+      <!-- <section class="in-the-box2">
         <div class="container">
           <div class="in-the-box__wrapper2">
             <p class="in-the-box__title2">in the box</p>
@@ -292,9 +318,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="metaverse-loading">
+      <!-- <section class="metaverse-loading">
         <div class="container">
           <div class="metaverse-loading__wrapper">
             <img
@@ -307,140 +333,141 @@
             <button class="metaverse-loading__button">GO</button>
           </div>
         </div>
-      </section>
+      </section> -->
+
+      <!-- <section class="accessories">
+        <div class="container">
+          <div class="accessories__wrapper">
+            <p class="accessories__title">ACCESSORIES</p>
+
+            <p class="accessories__subtitle">Personalize every experience</p>
+
+            <ul class="accessories__list">
+              <li class="accessories__item">
+                <div class="accessories__upper-block">
+                  <img
+                    class="accessories__image"
+                    src="/images/Rectangle 14.png"
+                  />
+
+                  <p class="accessories__text">Meta Quest 2 Carrying Case</p>
+
+                  <p class="accessories__subtext">
+                    Protect your system–at home or away.
+                  </p>
+                </div>
+
+                <div class="accessories__lower-block">
+                  <p class="accessories__price">$59.99 USD</p>
+
+                  <button class="accessories__button">BUY NOW</button>
+                </div>
+              </li>
+
+              <li class="accessories__item">
+                <div class="accessories__upper-block">
+                  <img
+                    class="accessories__image"
+                    src="/images/Rectangle 14 (1).png"
+                  />
+
+                  <p class="accessories__text">Link Cable</p>
+
+                  <p class="accessories__subtext">
+                    Harness the power of your PC with this premium fiber-optic
+                    cable.
+                  </p>
+                </div>
+
+                <div class="accessories__lower-block">
+                  <p class="accessories__price">$79.99 USD</p>
+
+                  <button class="accessories__button">BUY NOW</button>
+                </div>
+              </li>
+
+              <li class="accessories__item">
+                <div class="accessories__upper-block">
+                  <img
+                    class="accessories__image"
+                    src="/images/Rectangle 14 (2).png"
+                  />
+
+                  <p class="accessories__text">Meta Quest 2 Active Pack</p>
+
+                  <p class="accessories__subtext">
+                    A wipeable facial interface, wrist straps, and knuckle
+                    straps.
+                  </p>
+                </div>
+
+                <div class="accessories__lower-block">
+                  <p class="accessories__price">$69.99 USD</p>
+
+                  <button class="accessories__button">BUY NOW</button>
+                </div>
+              </li>
+
+              <li class="accessories__item">
+                <div class="accessories__upper-block">
+                  <img
+                    class="accessories__image"
+                    src="/images/Rectangle 14 (3).png"
+                  />
+
+                  <p class="accessories__text">Meta Quest Gift Cards</p>
+
+                  <p class="accessories__subtext">
+                    Redeemable on 350+ games and apps.
+                  </p>
+                </div>
+
+                <div class="accessories__lower-block">
+                  <p class="accessories__price">$15-50 USD</p>
+
+                  <button class="accessories__button">BUY NOW</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="contacts">
+        <div class="container">
+          <p class="contacts__title">Get news and updates</p>
+
+          <div class="contacts__wrapper">
+            <div class="contacts__form">
+              <form class="contacts__inputs">
+                <input
+                  class="contacts__email"
+                  type="email"
+                  placeholder="E-mail"
+                />
+
+                <button class="contacts__button" type="submit">GO</button>
+              </form>
+
+              <p class="contacts__text">
+                By signing up you agree to receive updates and marketing
+                messages (e.g. email, social, etc.) from Meta about Meta’s
+                existing and future products and services. You may withdraw your
+                consent and unsubscribe at any time by clicking the unsubscribe
+                link included in our messages. Your subscription is subject to
+                the Terms and Privacy Policy
+              </p>
+            </div>
+
+            <a class="contacts__adress" href="mailto:oculusshop@gmail.com"
+              >oculusshop@gmail.com</a
+            >
+          </div>
+        </div>
+      </section> -->
     </body>
 
-    <section class="accessories">
-      <div class="container">
-        <div class="accessories__wrapper">
-          <p class="accessories__title">ACCESSORIES</p>
-
-          <p class="accessories__subtitle">Personalize every experience</p>
-
-          <ul class="accessories__list">
-            <li class="accessories__item">
-              <div class="accessories__upper-block">
-                <img
-                  class="accessories__image"
-                  src="/images/Rectangle 14.png"
-                />
-
-                <p class="accessories__text">Meta Quest 2 Carrying Case</p>
-
-                <p class="accessories__subtext">
-                  Protect your system–at home or away.
-                </p>
-              </div>
-
-              <div class="accessories__lower-block">
-                <p class="accessories__price">$59.99 USD</p>
-
-                <button class="accessories__button">BUY NOW</button>
-              </div>
-            </li>
-
-            <li class="accessories__item">
-              <div class="accessories__upper-block">
-                <img
-                  class="accessories__image"
-                  src="/images/Rectangle 14 (1).png"
-                />
-
-                <p class="accessories__text">Link Cable</p>
-
-                <p class="accessories__subtext">
-                  Harness the power of your PC with this premium fiber-optic
-                  cable.
-                </p>
-              </div>
-
-              <div class="accessories__lower-block">
-                <p class="accessories__price">$79.99 USD</p>
-
-                <button class="accessories__button">BUY NOW</button>
-              </div>
-            </li>
-
-            <li class="accessories__item">
-              <div class="accessories__upper-block">
-                <img
-                  class="accessories__image"
-                  src="/images/Rectangle 14 (2).png"
-                />
-
-                <p class="accessories__text">Meta Quest 2 Active Pack</p>
-
-                <p class="accessories__subtext">
-                  A wipeable facial interface, wrist straps, and knuckle straps.
-                </p>
-              </div>
-
-              <div class="accessories__lower-block">
-                <p class="accessories__price">$69.99 USD</p>
-
-                <button class="accessories__button">BUY NOW</button>
-              </div>
-            </li>
-
-            <li class="accessories__item">
-              <div class="accessories__upper-block">
-                <img
-                  class="accessories__image"
-                  src="/images/Rectangle 14 (3).png"
-                />
-
-                <p class="accessories__text">Meta Quest Gift Cards</p>
-
-                <p class="accessories__subtext">
-                  Redeemable on 350+ games and apps.
-                </p>
-              </div>
-
-              <div class="accessories__lower-block">
-                <p class="accessories__price">$15-50 USD</p>
-
-                <button class="accessories__button">BUY NOW</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <div class="container">
-        <p class="contacts__title">Get news and updates</p>
-
-        <div class="contacts__wrapper">
-          <div class="contacts__form">
-            <form class="contacts__inputs">
-              <input
-                class="contacts__email"
-                type="email"
-                placeholder="E-mail"
-              />
-
-              <button class="contacts__button" type="submit">GO</button>
-            </form>
-
-            <p class="contacts__text">
-              By signing up you agree to receive updates and marketing messages
-              (e.g. email, social, etc.) from Meta about Meta’s existing and
-              future products and services. You may withdraw your consent and
-              unsubscribe at any time by clicking the unsubscribe link included
-              in our messages. Your subscription is subject to the Terms and
-              Privacy Policy
-            </p>
-          </div>
-
-          <a class="contacts__adress" href="mailto:oculusshop@gmail.com"
-            >oculusshop@gmail.com</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <nav class="footer__menu">
@@ -468,6 +495,6 @@
           <img class="footer__contacts" src="/images/Frame 6.png" />
         </div>
       </div>
-    </footer>
+    </footer> -->
   </main>
 </html>
