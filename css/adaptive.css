@@ -35,7 +35,7 @@
   }
 
   .inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .in-the-box__title {
@@ -93,6 +93,14 @@
   }
 }
 
+@media (max-width: 1192px) {
+  .accessories__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 1000px) {
   .games__box {
     justify-content: center;
@@ -118,6 +126,11 @@
   .games__item-button {
     align-self: center;
   }
+
+  .footer__wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -135,6 +148,27 @@
 
   .games__item {
     width: 480px;
+  }
+
+  .in-the-box__image {
+    width: 200px;
+  }
+
+  .in-the-box__text {
+    margin-bottom: 167px;
+    max-width: 160px;
+  }
+
+  .in-the-box__subtitle {
+    max-width: 150px;
+  }
+
+  .in-the-box__big-image {
+    width: 300px;
+  }
+
+  .metaverse-loading__text {
+    max-width: 70px;
   }
 }
 
@@ -206,6 +240,15 @@
   .games__item-text {
     max-width: 250px;
     margin: 0 auto;
+  }
+
+  .contacts__inputs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__button {
+    position: static;
   }
 }
 
