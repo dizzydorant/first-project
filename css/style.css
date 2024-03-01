@@ -300,8 +300,15 @@ body {
 }
 
 .buy__image {
+  cursor: pointer;
   max-width: 350px;
   max-height: 340px;
+  transition: transform 2s ease-in-out, filter 2s ease-in-out;
+}
+
+.buy__image:hover {
+  transform: scale(1.2) rotate(360deg);
+  filter: blur(6px);
 }
 
 .buy__buttons-wrapper {
